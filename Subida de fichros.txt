@@ -1,0 +1,20 @@
+FLUJOS DE SALIDA DE BYTES
+	
+OutputStream: clase abstracta que es padre de la mayoría de los flujos de bytes
+	-FileOutputStream: permite escribir en un ficher byte a byte	
+	-BufferedOutputStream: permite escribir grupos de bytes (par archivos pesados)
+	-ByteArrayOutputStream: permite escribir en memoria obteniendo lo escrito
+		en un array de bytes
+
+
+FLUJOS DE SALIDA DE CARACTERES:
+
+-Writer: clase abstracta padre de la mayoría de los flujos de caracteres
+	-FileWriter: permite escribir en un fichero caracter a caracter
+	-BufferedWirter: permite escribirr líneas de texto
+	-StringWriter: permite escribir en memoria obteniendo lo escrito
+		en un String
+	-OutputStreamWriter: permite transformasr un OutputStream en un Writer
+	-PrintWriter: permite escribir tipos básicos Java
+	
+	

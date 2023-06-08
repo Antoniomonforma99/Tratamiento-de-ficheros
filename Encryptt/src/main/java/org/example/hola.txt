@@ -1,0 +1,40 @@
+package montero.antonio.ud04.ej1y2.models;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+import jakarta.persistence.Lob;
+import lombok.*;
+
+import java.time.LocalDate;
+
+@Entity
+@AllArgsConstructor @NoArgsConstructor
+@Getter @Setter
+@Builder
+public class GasStation {
+
+    @Id
+    @GeneratedValue
+    private Long id;
+
+    private String nombre;
+
+    private String marca;
+
+    private String ubicacion;
+
+    private Boolean tieneAutolavado;
+
+    private Double precioGasoilNormal;
+
+    private Double precioGasolina95Octanos;
+
+    private Double precioGasolina98;
+
+    private String servicios;
+
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy/MM/dd")
+    private LocalDate fechaApertura;
+}
